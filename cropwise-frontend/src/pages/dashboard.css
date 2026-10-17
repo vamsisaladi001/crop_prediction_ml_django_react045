@@ -1,0 +1,98 @@
+.dash {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f1f5ec;
+  color: #203b24;
+}
+
+.dash-head {
+  margin-bottom: 24px;
+}
+
+.dash-head h1 {
+  margin-bottom: 8px;
+  color: #244a29;
+}
+
+.panel {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #dce5d7;
+}
+
+.manual-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.manual-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.manual-field label {
+  font-weight: 600;
+}
+
+.manual-field input,
+.manual-field select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5c5;
+  border-radius: 8px;
+  background: white;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #315f35;
+  color: white;
+}
+
+.btn-quiet {
+  background: #e6ece1;
+  color: #203b24;
+}
+
+.results {
+  margin-top: 24px;
+}
+
+.result {
+  background: white;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.notice-error {
+  color: #b42318;
+}
+
+@media (max-width: 600px) {
+  .dash {
+    padding: 16px;
+  }
+
+  .manual-input-grid {
+    grid-template-columns: 1fr;
+  }
+}
